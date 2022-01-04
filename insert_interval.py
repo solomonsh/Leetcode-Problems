@@ -4,6 +4,7 @@ class Solution:
             return False
         else:
             return True
+            
     def insert(self, intervals, newInterval):
 
         if len(intervals) == 0:
