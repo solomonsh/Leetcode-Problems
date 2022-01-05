@@ -6,7 +6,7 @@ def answerQueries(queries,n):
         if query[0] == 1:
             inital_array[query[1]-1] =  True
         elif query[0] == 2:
-
+         
             if True in inital_array[query[1]-1:]:
                 result.append(len(inital_array[0:query[1]-1]) + inital_array[query[1]-1:].index(True)+1)
             else:
