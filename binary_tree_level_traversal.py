@@ -12,6 +12,7 @@ class Solution:
     def levelOrder(self, root):
         if root is None:
             return None
+
         result = []
         queue = deque([root])
 
@@ -27,6 +28,7 @@ class Solution:
                 if current.right:
                     queue.append(current.right)
             result.append(level_children)
+            
         return result
 
 
@@ -42,4 +44,4 @@ root1 = TreeNode(1)
 root2 = None
 
 sol = Solution()
-print(sol.levelOrder(root2))
+print(sol.levelOrder(root))
