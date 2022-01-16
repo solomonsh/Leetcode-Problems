@@ -1,10 +1,4 @@
- 
 class Solution:
-    def overlaps(self,interval1,interval2):
-        if interval1[1]<interval2[0] or interval2[1]<interval1[0]:
-            return False
-        else:
-            return True
     
     def merge(self, intervals): 
        
